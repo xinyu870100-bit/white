@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Showcase Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <img class="hero__bg" src="assets/hero.jpg" alt="主視覺" />
+    <div class="hero__content container">
+      <p class="eyebrow">IMAGE SHOWCASE TEMPLATE</p>
+      <h1>網站主只要替換圖片，就能直接上 GitHub Pages</h1>
+      <p class="hero__text">
+        這是一個為展示型網站設計的範本。主視覺、卡片圖片與按鈕位置都已經固定好，
+        就算每張圖內容不同，也不會讓按鈕高低不齊。
+      </p>
+      <div class="hero__actions">
+        <a class="button button--solid" href="#gallery">查看內容</a>
+        <a class="button button--ghost" href="#contact">聯絡資訊</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section container">
+      <div class="section-heading">
+        <p class="eyebrow">WHY THIS VERSION</p>
+        <h2>這版重點處理了兩個問題</h2>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>按鈕固定在一致位置</h3>
+          <p>每張卡片都使用固定比例圖片與相同卡片結構，底部按鈕採用自動貼底排版，不會因為圖片尺寸或文案長短跑位。</p>
+        </article>
+        <article class="feature-card">
+          <h3>首屏更容易控制在一頁內</h3>
+          <p>首屏高度使用視窗高度控制，主視覺、標題與 CTA 被壓縮在更合理的區域內，桌機 100% 瀏覽時更不容易一打開就超高。</p>
+        </article>
+        <article class="feature-card">
+          <h3>只要換圖與文字就能使用</h3>
+          <p>網站主之後只要替換 <code>assets</code> 裡的圖片與頁面文字，不需要重新設計整個版面。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section section--soft">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">GALLERY</p>
+          <h2>展示區塊</h2>
+          <p>以下卡片可直接替換成網站主自己的圖片與文字。圖片比例建議維持一致，效果會最好。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="showcase-card">
+            <img src="assets/card-1.jpg" alt="展示圖一" />
+            <div class="showcase-card__body">
+              <h3>服務項目一</h3>
+              <p>這裡放簡短介紹。建議控制在兩到三行內，整體排版會最穩定。</p>
+              <a class="button button--solid button--small" href="#">了解更多</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <img src="assets/card-2.jpg" alt="展示圖二" />
+            <div class="showcase-card__body">
+              <h3>服務項目二</h3>
+              <p>不論每張圖片內容不同，只要沿用同一個版型，按鈕都會維持同樣高度。</p>
+              <a class="button button--solid button--small" href="#">了解更多</a>
+            </div>
+          </article>
+
+          <article class="showcase-card">
+            <img src="assets/card-3.jpg" alt="展示圖三" />
+            <div class="showcase-card__body">
+              <h3>服務項目三</h3>
+              <p>這個區塊也能改成作品集、活動資訊、課程介紹或其他展示用途。</p>
+              <a class="button button--solid button--small" href="#">了解更多</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner section container">
+      <div class="banner-panel">
+        <div>
+          <p class="eyebrow">FULL WIDTH BANNER</p>
+          <h2>中段橫幅也能直接換圖</h2>
+          <p>如果網站主想要保留類似 Canva 的大橫幅感，這裡就是可替換的大圖區塊。圖片建議使用 1600×900 或更大。</p>
+        </div>
+        <a class="button button--solid" href="#contact">立即詢問</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section section--soft">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>聯絡區塊</h2>
+          <p>這裡可以改成表單連結、LINE、Instagram、Email 或預約按鈕。</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button--solid" href="mailto:hello@example.com">Email</a>
+          <a class="button button--ghost" href="#">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
