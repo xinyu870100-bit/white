@@ -208,34 +208,31 @@ body.page {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* ===== RULES 頁面（置中修正） ===== */
-
+/* ===== rules 頁最終修正 ===== */
 .rules-layout {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  padding: 20px;
 }
 
 .rules-panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: min(720px, 90%);
-  max-height: 78%;
+  max-height: 76%;
+  overflow-y: auto;
 
   padding: 28px 30px;
   border-radius: 28px;
-
   background: rgba(35, 28, 68, 0.55);
   border: 1px solid rgba(255,255,255,0.12);
   backdrop-filter: blur(4px);
-
   color: rgba(255,255,255,0.92);
 
   font-size: 14px;
   line-height: 1.8;
-
-  overflow-y: auto;
+  z-index: 2;
 }
 
 .rules-title {
@@ -245,8 +242,12 @@ body.page {
 }
 
 .rules-panel ul {
-  padding-left: 20px;
   margin: 0;
+  padding-left: 20px;
+}
+
+.rules-panel li {
+  margin-bottom: 6px;
 }
 
 .rules-panel li {
