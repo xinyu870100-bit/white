@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>服務內容｜白飯俱樂部</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-services">
+  <div class="page-shell">
+    <header class="site-header">
+      <h1 class="brand-cn">白飯俱樂部</h1>
+      <div class="brand-en-wrap"><span class="brand-line"></span><span class="brand-en">RICE CLUB</span><span class="brand-line"></span></div>
+    </header>
+    <main class="main-frame">
+      <section class="showcase services-showcase" style="background-image:url('assets/services-bg.svg')">
+        
+        <div class="content-overlay services-layout">
+          <div class="services-copy">
+            <ul>
+              <li>店內員工一對一點檯聊天，一節十分鐘。</li>
+              <li>贈送點名香檳 / 香檳塔，單支香檳包含店員文字打 call。</li>
+              <li>一座香檳塔包含全體員工與店長語音打 call。</li>
+              <li>店內專業攝影師服務，另加設定或魔法請洽攝影師。</li>
+            </ul>
+          </div>
+          <div class="services-gallery">
+            <button class="media-card modal-card" type="button" data-modal-image="assets/service-1.svg" data-modal-title="服務示意 1" data-modal-desc="可替換成原站服務圖片。"><img src="assets/service-1.svg" alt="服務示意 1"></button>
+            <button class="media-card modal-card" type="button" data-modal-image="assets/service-2.svg" data-modal-title="服務示意 2" data-modal-desc="可替換成原站服務圖片。"><img src="assets/service-2.svg" alt="服務示意 2"></button>
+            <button class="media-card modal-card wide" type="button" data-modal-image="assets/service-3.svg" data-modal-title="服務示意 3" data-modal-desc="可替換成原站服務圖片。"><img src="assets/service-3.svg" alt="服務示意 3"></button>
+          </div>
+          <a class="callout-link" href="menu.html">觀看菜單 →</a>
+        </div>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <a class="nav-btn" href="index.html"><span class="nav-icon">⌂</span><span class="nav-label">入口</span></a>
+      <a class="nav-btn" href="about.html"><span class="nav-icon">ⓘ</span><span class="nav-label">關於</span></a>
+      <a class="nav-btn" href="rules.html"><span class="nav-icon">▤</span><span class="nav-label">顧客守則</span></a>
+      <a class="nav-btn" href="staff.html"><span class="nav-icon">👥</span><span class="nav-label">店員介紹</span></a>
+      <a class="nav-btn active" href="services.html"><span class="nav-icon">☆</span><span class="nav-label">服務內容</span></a>
+      <a class="nav-btn" href="menu.html"><span class="nav-icon">◔</span><span class="nav-label">菜單</span></a>
+      <a class="nav-btn" href="gallery.html"><span class="nav-icon">▣</span><span class="nav-label">精彩瞬間</span></a>
+      <a class="nav-btn" href="ranking.html"><span class="nav-icon">🍾</span><span class="nav-label">斗內香檳王</span></a>
+      <a class="nav-btn" href="environment.html"><span class="nav-icon">⌂</span><span class="nav-label">店內環境</span></a>
+    </nav>
+  </div>
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-backdrop" data-close-lightbox aria-label="關閉"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" data-close-lightbox aria-label="關閉">×</button>
+      <img id="lightbox-image" alt="">
+      <div class="lightbox-copy">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
