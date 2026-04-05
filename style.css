@@ -208,48 +208,73 @@ body.page {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* ===== rules 頁最終修正 ===== */
+/* ===== rules 頁：一頁完整顯示版 ===== */
 .rules-layout {
   position: relative;
   height: 100%;
 }
 
-.rules-panel {
+.rules-panel-fit {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(720px, 90%);
-  max-height: 76%;
-  overflow-y: auto;
+  transform: translate(-50%, -54%);
+  width: min(760px, 88%);
+  max-height: none;
+  overflow: hidden;
 
-  padding: 28px 30px;
-  border-radius: 28px;
-  background: rgba(35, 28, 68, 0.55);
-  border: 1px solid rgba(255,255,255,0.12);
+  padding: 20px 24px 18px;
+  border-radius: 26px;
+  background: rgba(35, 28, 68, 0.48);
+  border: 1px solid rgba(255,255,255,0.10);
   backdrop-filter: blur(4px);
-  color: rgba(255,255,255,0.92);
-
-  font-size: 14px;
-  line-height: 1.8;
-  z-index: 2;
+  color: rgba(255,255,255,0.94);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.20);
 }
 
 .rules-title {
+  margin: 0 0 12px;
   text-align: center;
-  font-size: 24px;
-  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
-.rules-panel ul {
+.rules-panel-fit ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
-.rules-panel li {
-  margin-bottom: 6px;
+.rules-panel-fit li {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
-.rules-panel li {
-  margin-bottom: 6px;
+/* 右下下一頁按鈕固定，不參與版面撐高 */
+.rules-layout .callout-link {
+  position: absolute;
+  right: 28px;
+  bottom: 22px;
+  margin: 0;
+}
+
+/* 視窗較小時再壓縮一點 */
+@media (max-width: 1200px) {
+  .rules-panel-fit {
+    width: min(720px, 90%);
+    padding: 18px 20px 16px;
+    transform: translate(-50%, -52%);
+  }
+
+  .rules-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rules-panel-fit li {
+    font-size: 12px;
+    line-height: 1.45;
+    margin-bottom: 3px;
+  }
 }
