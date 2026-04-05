@@ -567,3 +567,53 @@ body.page {
     padding: 20px 24px 18px;
   }
 }
+/* 每頁主內容區要能給右下角定位 */
+.showcase {
+  position: relative;
+}
+
+.content-overlay {
+  position: relative;
+  height: 100%;
+}
+
+/* 下一頁連結固定在右下角 */
+.callout-link {
+  position: absolute;
+  right: 40px;
+  bottom: 28px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(20, 10, 38, 0.52);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #f1c8ff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+  text-shadow: 0 0 12px rgba(224, 153, 255, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+/* 避免個別頁面把它擠走 */
+.staff-layout .callout-link,
+.about-right .callout-link,
+.rules-link-wrap .callout-link {
+  position: absolute;
+  right: 40px;
+  bottom: 28px;
+  margin: 0;
+}
+
+/* 小螢幕時稍微內縮 */
+@media (max-width: 1200px) {
+  .callout-link {
+    right: 24px;
+    bottom: 20px;
+    font-size: 16px;
+    padding: 9px 16px;
+  }
+}
